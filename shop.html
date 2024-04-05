@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="shortcut icon" href="icon.png" type="image/.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="sheen.css">
+    <link rel="stylesheet" href="responsiveHome.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <section id="header">
+        <a href="sheen.html"><img src="SheenStore (4).jpg" alt="logo" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="sheen.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+               
+                <li class="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i  id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+    <section id="page-header">
+        <h2>Choose the Vibes</h2>
+        <p>Save more with coupons & up to 70% off!</p>
+    </section>
+     <select id="sortOrder" onchange="redirectToPage()">
+        <option value="">Choose The collection To checkout</option>
+        <option value="Menscollection">Men's Collection<section id="product1" class="section-p1">
+            <section id="page-headerr">
+              
+                </section></option>
+        <option value="womenscollection">Women's collection  <section id="product1" class="section-p1">
+            <section id="page-headerrr">
+               
+                </section> </option>
+    </select>               
+   
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>sign up for newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+           
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>562 Wellington Road, Street 32,san Freancisco</p>
+            <p><strong>Phone:</strong>+01 2222 3665 / (+91) 01 2345 6763</p>
+            <p><strong>Hours:</strong>10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Poilcy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account </h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My WishList</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="app.jpg" alt="app">
+                <img src="play.jpg" alt="play">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="pay.png" alt="pay">
+        </div>
+        <div class="copyright">
+            <p>2023 , Tejas Nasre - HTML CSS JS Ecommerce Template</p>
+        </div>
+    </footer>
+   <script src="responsiveHome.js"></script>
+   
+    
+   <script>
+    function redirectToPage() {
+        var selectedValue = document.getElementById("sortOrder").value;
+        if (selectedValue === "Menscollection") {
+            window.location.href = "menscollection.html";
+        } else if (selectedValue === "womenscollection") {
+            window.location.href = "womenscollection.html";
+        }
+    }
+</script>
+
+</body>
+</html>

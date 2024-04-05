@@ -1,0 +1,18 @@
+.section-p {
+    padding: 40px 150px;
+  }
+
+#sm-banne .banner-box h1{
+    
+    padding: 20px;  
+    color: yellow;
+}
+#sm-banne .banner-box img{
+    padding: 45px 145px;
+    height: 45pc;
+    width: 45pc;
+    position: center;
+    margin-left:270px;
+    color: yellow;
+    position: center;
+}
