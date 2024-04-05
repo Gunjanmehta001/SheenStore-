@@ -1,0 +1,26 @@
+#sortOrder {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ffffff; /* White border */
+    background-color: rgb(88, 88, 216); /* Dark background color */
+    color: black; /* Light text color */
+    outline: none; /* Remove outline */
+    cursor: pointer;
+    width: 75pc;  
+    text-align: center;
+}
+#page-headerr{
+    background-image: url(webbanner_mens.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 14px;
+    cursor: pointer;
+    color: #333333;
+}

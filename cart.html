@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="shortcut icon" href="icon.png" type="image/.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="sheen.css">
+    <link rel="stylesheet" href="responsiveHome.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <section id="header">
+        <a href="sheen.html"><img src="SheenStore (4).jpg" alt="logo" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="sheen.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <div><li>
+                
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search for  clothes">
+                        <button id="searchButton"onclick="filterProducts()">Search</button>
+                    </div>
+                </li>
+</div>
+                <li class="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+            <div id="mobile">
+            
+                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <i  id="bar" class="fa-solid fa-bars"></i>
+            </div>
+    </section>
+
+   
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>REMOVE</td>
+                    <td>IMAGES</td>
+                    <td>PRODUCTS</td>
+                    <td>PRICE</td>
+                    <td>QUANTITY</td>
+                    <td>SUBTOTAL</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" onclick="removeFromCart(this)"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="Bonkerscorner_Chainsaw_03-1-768x1152.jpg" alt="P-1" /></td>
+                    <td>Cartoon Astronaut T-shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1" onchange="updateSubtotal(this)"/></td>
+                    <td class="subtotal">$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="removeFromCart(this)"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="Bonkerscorner_sage-green-bodysuit_06.jpg" alt="P-1" /></td>
+                    <td>Cartoon Astronaut T-shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1" onchange="updateSubtotal(this)"/></td>
+                    <td class="subtotal">$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="removeFromCart(this)"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="Bonkerscorner_blue-top_05-768x1152.jpg" alt="P-1" /></td>
+                    <td>Cartoon Astronaut T-shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1" onchange="updateSubtotal(this)"/></td>
+                    <td class="subtotal">$118.19</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Cart add section -->
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon Code" />
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="sub-total">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td id="cart-subtotal">$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong id="cart-total">$ 335</strong></td>
+                </tr>
+            </table>
+            <button class="normal" onclick="redirectToPayment()">Proceed to checkout</button>
+        </div>
+    </section>
+    <script src="responsiveHome.js"></script>
+    <script src="cart.js"></script>
+    
+
+</body>
+</html>
